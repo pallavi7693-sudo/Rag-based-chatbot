@@ -1,5 +1,13 @@
 # FundIQ - Facts-Only Mutual Fund FAQ Assistant
 
+[![Railway Deployment](https://img.shields.io/badge/Railway-Live%20Demo-00C7B7?style=for-the-badge&logo=railway&logoColor=white)](https://your-app-name.up.railway.app)
+[![SEBI Compliant](https://img.shields.io/badge/SEBI%20Compliant-Facts--Only-10B981?style=for-the-badge)](https://www.amfiindia.com)
+[![GitHub Actions Scheduler](https://img.shields.io/badge/Daily%20Cron-Active-6366F1?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/pallavi7693-sudo/Rag-based-chatbot/actions)
+
+> 🌐 **Live Cloud Deployment**: This full-stack assistant is deployed and running live on **Railway Cloud**!  
+> ### 👉 **[Click here to open the Live Web Assistant](https://your-app-name.up.railway.app)**  
+> *(Note: Replace `https://your-app-name.up.railway.app` above with your exact Railway domain from your Railway Settings tab!)*
+
 FundIQ is a lightweight, high-precision **Retrieval-Augmented Generation (RAG)** assistant designed to answer objective, verifiable mutual fund queries without providing investment advice, opinions, or recommendations.
 
 Built for **ICICI Prudential Mutual Fund** schemes using **Groww** as the reference product context, the assistant retrieves verified information strictly from official public sources such as **AMC websites**, **AMFI**, and **SEBI**.
