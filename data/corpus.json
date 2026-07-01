@@ -1,0 +1,264 @@
+{
+  "amc": "ICICI Prudential Mutual Fund",
+  "reference_context": "Groww",
+  "last_updated_date": "July 2026",
+  "schemes": [
+    {
+      "name": "ICICI Prudential Large Cap Fund (Direct - Growth)",
+      "category": "Large Cap Fund",
+      "groww_url": "https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth",
+      "official_sid_kim_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "official_factsheet_url": "https://www.icicipruamc.com/downloads/factsheets"
+    },
+    {
+      "name": "ICICI Prudential Dynamic Plan (Direct - Growth)",
+      "category": "Dynamic Asset Allocation / Balanced Advantage Fund",
+      "groww_url": "https://groww.in/mutual-funds/icici-prudential-dynamic-plan-direct-growth",
+      "official_sid_kim_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "official_factsheet_url": "https://www.icicipruamc.com/downloads/factsheets"
+    },
+    {
+      "name": "ICICI Prudential Short Term Fund (Direct - Growth)",
+      "category": "Short Duration Debt Fund",
+      "groww_url": "https://groww.in/mutual-funds/icici-prudential-short-term-plan-direct-growth",
+      "official_sid_kim_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "official_factsheet_url": "https://www.icicipruamc.com/downloads/factsheets"
+    },
+    {
+      "name": "ICICI Prudential Flexicap Fund (Direct - Growth)",
+      "category": "Flexi Cap Fund",
+      "groww_url": "https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth",
+      "official_sid_kim_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "official_factsheet_url": "https://www.icicipruamc.com/downloads/factsheets"
+    },
+    {
+      "name": "ICICI Prudential Top 100 Fund (Direct - Growth)",
+      "category": "Large Cap Fund",
+      "groww_url": "https://groww.in/mutual-funds/icici-prudential-top-100-fund-direct-growth",
+      "official_sid_kim_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "official_factsheet_url": "https://www.icicipruamc.com/downloads/factsheets"
+    }
+  ],
+  "official_urls": [
+    "https://www.icicipruamc.com/downloads/sid-kim",
+    "https://www.icicipruamc.com/downloads/factsheets",
+    "https://www.icicipruamc.com/investor-services/statement-of-account",
+    "https://www.icicipruamc.com/investor-services/capital-gain-statement",
+    "https://www.icicipruamc.com/faqs",
+    "https://www.icicipruamc.com/about-us",
+    "https://www.icicipruamc.com/our-funds/equity-funds/icici-prudential-large-cap-fund",
+    "https://www.icicipruamc.com/our-funds/hybrid-funds/icici-prudential-balanced-advantage-fund",
+    "https://www.icicipruamc.com/our-funds/debt-funds/icici-prudential-short-term-fund",
+    "https://www.icicipruamc.com/our-funds/equity-funds/icici-prudential-flexicap-fund",
+    "https://www.icicipruamc.com/our-funds/equity-funds/icici-prudential-top-100-fund",
+    "https://www.amfiindia.com/investor-corner/knowledge-center/what-is-mutual-fund.html",
+    "https://www.amfiindia.com/investor-corner/knowledge-center/expense-ratio.html",
+    "https://www.amfiindia.com/investor-corner/knowledge-center/elss.html",
+    "https://www.amfiindia.com/investor-corner/online-center/account-statement.html",
+    "https://www.amfiindia.com/investor-corner/knowledge-center/taxation.html",
+    "https://www.sebi.gov.in/legal/regulations/jan-2024/sebi-mutual-funds-regulations-1996-last-amended-on-january-12-2024-_80844.html",
+    "https://www.sebi.gov.in/sebi_data/attachdocs/1508930465551.pdf",
+    "https://www.sebi.gov.in/legal/circulars/mar-2024/simplification-and-rationalization-of-mutual-fund-scheme-information-document-_82337.html",
+    "https://www.camsonline.com/Investors/Statements/Consolidated-Account-Statement"
+  ],
+  "chunks": [
+    {
+      "id": "chunk_1",
+      "scheme": "ICICI Prudential Large Cap Fund",
+      "topic": "Expense Ratio",
+      "keywords": ["expense ratio", "large cap fund", "icici prudential large cap", "cost", "fee", "ter", "direct growth"],
+      "content": "The Total Expense Ratio (TER) of ICICI Prudential Large Cap Fund (Direct Plan - Growth) is approximately 0.88% per annum as per official Scheme Information Documents. The expense ratio represents the annual fee charged by the Asset Management Company to manage the mutual fund fund operations.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_2",
+      "scheme": "ICICI Prudential Large Cap Fund",
+      "topic": "Exit Load",
+      "keywords": ["exit load", "large cap fund", "icici prudential large cap", "redemption charge", "penalty", "withdraw"],
+      "content": "For ICICI Prudential Large Cap Fund, an exit load of 1.00% is applicable if units are redeemed or switched out within 1 year (365 days) from the date of allotment. Nil exit load is charged if units are redeemed or switched out after completion of 1 year from the date of allotment.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_3",
+      "scheme": "ICICI Prudential Large Cap Fund",
+      "topic": "Minimum SIP & Investment",
+      "keywords": ["minimum sip", "sip amount", "large cap fund", "icici prudential large cap", "invest", "minimum investment", "lump sum"],
+      "content": "The minimum SIP (Systematic Investment Plan) amount for ICICI Prudential Large Cap Fund is Rs. 100 per month and in multiples of Rs. 1 thereafter. For lump-sum investments, the minimum initial investment amount is Rs. 100.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_4",
+      "scheme": "ICICI Prudential Large Cap Fund",
+      "topic": "Lock-in Period",
+      "keywords": ["lock-in period", "lock in", "large cap fund", "icici prudential large cap", "holding period"],
+      "content": "There is no statutory lock-in period for ICICI Prudential Large Cap Fund as it is an open-ended equity scheme. Investors can redeem their units at any time on business days, subject to applicable exit loads if redeemed within 1 year.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_5",
+      "scheme": "ICICI Prudential Large Cap Fund",
+      "topic": "Riskometer & Benchmark",
+      "keywords": ["riskometer", "benchmark", "benchmark index", "risk", "large cap fund", "icici prudential large cap", "nifty 100"],
+      "content": "ICICI Prudential Large Cap Fund is classified under the 'Very High Risk' category on the official SEBI Riskometer. The scheme's performance is measured against the benchmark index NIFTY 100 TRI (Total Return Index).",
+      "source_url": "https://www.icicipruamc.com/downloads/factsheets",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_6",
+      "scheme": "ICICI Prudential Dynamic Plan",
+      "topic": "Expense Ratio",
+      "keywords": ["expense ratio", "dynamic plan", "icici prudential dynamic", "balanced advantage", "cost", "fee", "ter", "direct growth"],
+      "content": "The Total Expense Ratio (TER) of ICICI Prudential Dynamic Plan (Direct Plan - Growth) is approximately 0.86% per annum. This scheme is an open-ended dynamic asset allocation fund that dynamically manages allocation across equity and debt instruments.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_7",
+      "scheme": "ICICI Prudential Dynamic Plan",
+      "topic": "Exit Load",
+      "keywords": ["exit load", "dynamic plan", "icici prudential dynamic", "balanced advantage", "redemption charge", "withdraw"],
+      "content": "For ICICI Prudential Dynamic Plan, an exit load of 1.00% is charged if units in excess of 30% of the investment are redeemed within 1 year from the date of allotment. No exit load is charged for redemption up to 30% of units within 1 year or for any redemption after 1 year.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_8",
+      "scheme": "ICICI Prudential Dynamic Plan",
+      "topic": "Minimum SIP & Lock-in",
+      "keywords": ["minimum sip", "sip amount", "lock-in period", "lock in", "dynamic plan", "icici prudential dynamic"],
+      "content": "The minimum SIP investment for ICICI Prudential Dynamic Plan is Rs. 100 per month. Being an open-ended hybrid scheme, it carries no lock-in period, allowing investors liquidity across all business days.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_9",
+      "scheme": "ICICI Prudential Dynamic Plan",
+      "topic": "Riskometer & Benchmark",
+      "keywords": ["riskometer", "benchmark", "benchmark index", "risk", "dynamic plan", "icici prudential dynamic", "crisil hybrid"],
+      "content": "ICICI Prudential Dynamic Plan carries a 'Very High Risk' rating on the SEBI Riskometer due to its equity exposure. Its primary benchmark index is the CRISIL Hybrid 50+50 - Moderate Index.",
+      "source_url": "https://www.icicipruamc.com/downloads/factsheets",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_10",
+      "scheme": "ICICI Prudential Short Term Fund",
+      "topic": "Expense Ratio & Category",
+      "keywords": ["expense ratio", "short term fund", "icici prudential short term", "debt fund", "cost", "ter", "direct growth"],
+      "content": "The Total Expense Ratio (TER) of ICICI Prudential Short Term Fund (Direct Plan - Growth) is approximately 0.38% per annum. It is an open-ended short duration debt scheme investing in instruments such that the Macaulay duration of the portfolio is between 1 year and 3 years.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_11",
+      "scheme": "ICICI Prudential Short Term Fund",
+      "topic": "Exit Load & Lock-in",
+      "keywords": ["exit load", "lock-in period", "lock in", "short term fund", "icici prudential short term", "redemption charge"],
+      "content": "ICICI Prudential Short Term Fund has Nil exit load, meaning investors can redeem their units at any time without paying any redemption penalty. Furthermore, there is zero lock-in period for this open-ended debt scheme.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_12",
+      "scheme": "ICICI Prudential Short Term Fund",
+      "topic": "Minimum SIP & Benchmark",
+      "keywords": ["minimum sip", "sip amount", "riskometer", "benchmark", "short term fund", "icici prudential short term", "crisil short duration"],
+      "content": "The minimum SIP investment amount for ICICI Prudential Short Term Fund is Rs. 1,000 per month. The scheme is classified as 'Moderate Risk' on the Riskometer and uses the CRISIL Short Duration Debt A-II Index as its benchmark.",
+      "source_url": "https://www.icicipruamc.com/downloads/factsheets",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_13",
+      "scheme": "ICICI Prudential Flexicap Fund",
+      "topic": "Expense Ratio & Overview",
+      "keywords": ["expense ratio", "flexicap fund", "flexi cap", "icici prudential flexicap", "cost", "ter", "direct growth"],
+      "content": "The Total Expense Ratio (TER) for ICICI Prudential Flexicap Fund (Direct Plan - Growth) is approximately 0.79% per annum. This open-ended dynamic equity scheme invests across large-cap, mid-cap, and small-cap stocks.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_14",
+      "scheme": "ICICI Prudential Flexicap Fund",
+      "topic": "Exit Load & Lock-in",
+      "keywords": ["exit load", "lock-in period", "lock in", "flexicap fund", "icici prudential flexicap", "redemption"],
+      "content": "An exit load of 1.00% is applicable on ICICI Prudential Flexicap Fund if units are redeemed or switched out within 12 months from the date of allotment. No exit load is applicable after completion of 12 months, and there is no lock-in period.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_15",
+      "scheme": "ICICI Prudential Flexicap Fund",
+      "topic": "Minimum SIP, Riskometer & Benchmark",
+      "keywords": ["minimum sip", "riskometer", "benchmark", "flexicap fund", "icici prudential flexicap", "bse 500"],
+      "content": "The minimum SIP investment for ICICI Prudential Flexicap Fund is Rs. 100 per month. The fund is benchmarked against the S&P BSE 500 TRI and is categorized as 'Very High Risk' on the SEBI Riskometer.",
+      "source_url": "https://www.icicipruamc.com/downloads/factsheets",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_16",
+      "scheme": "ICICI Prudential Top 100 Fund",
+      "topic": "Expense Ratio & Overview",
+      "keywords": ["expense ratio", "top 100 fund", "icici prudential top 100", "large cap", "cost", "ter", "direct growth"],
+      "content": "The Total Expense Ratio (TER) of ICICI Prudential Top 100 Fund (Direct Plan - Growth) is approximately 0.95% per annum. It is an open-ended equity scheme predominantly investing in large-cap stocks representing the top 100 companies by market capitalization.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_17",
+      "scheme": "ICICI Prudential Top 100 Fund",
+      "topic": "Exit Load & Lock-in",
+      "keywords": ["exit load", "lock-in period", "lock in", "top 100 fund", "icici prudential top 100", "redemption"],
+      "content": "For ICICI Prudential Top 100 Fund, an exit load of 1.00% is charged if units are redeemed within 1 year from the date of allotment. There is Nil exit load after 1 year, and no lock-in period applies.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_18",
+      "scheme": "ICICI Prudential Top 100 Fund",
+      "topic": "Minimum SIP, Riskometer & Benchmark",
+      "keywords": ["minimum sip", "riskometer", "benchmark", "top 100 fund", "icici prudential top 100", "nifty 100"],
+      "content": "Investors can start an SIP in ICICI Prudential Top 100 Fund with a minimum amount of Rs. 100 per month. The scheme is benchmarked against the NIFTY 100 TRI and carries a 'Very High Risk' classification on the Riskometer.",
+      "source_url": "https://www.icicipruamc.com/downloads/factsheets",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_19",
+      "scheme": "General / All Schemes",
+      "topic": "ELSS Lock-in Period",
+      "keywords": ["elss", "lock-in period", "lock in", "tax saver", "80c", "mandatory lock in", "equity linked saving scheme"],
+      "content": "Under SEBI and Income Tax Act regulations, Equity Linked Saving Schemes (ELSS) carry a mandatory statutory lock-in period of exactly 3 years (36 months) from the date of allotment. None of the non-ELSS open-ended mutual fund schemes carry any statutory lock-in period.",
+      "source_url": "https://www.amfiindia.com/investor-corner/knowledge-center/elss.html",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_20",
+      "scheme": "General / All Schemes",
+      "topic": "Download Statement of Account & Capital Gains",
+      "keywords": ["download statement", "statement of account", "soa", "capital gains", "tax statement", "how to download statement", "account statement", "tax report"],
+      "content": "Investors can download their Statement of Account (SoA) and Capital Gains statements directly from the official ICICI Prudential AMC portal under the 'Investor Services' section by entering their Folio Number or PAN and OTP. Alternatively, investors can download a Consolidated Account Statement (CAS) via CAMS online or AMFI portal.",
+      "source_url": "https://www.icicipruamc.com/investor-services/statement-of-account",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_21",
+      "scheme": "General / All Schemes",
+      "topic": "Official Public Sources & Factsheets",
+      "keywords": ["factsheet", "kim", "sid", "scheme information document", "where to find factsheet", "official documents"],
+      "content": "All official Scheme Information Documents (SIDs), Key Information Memorandums (KIMs), and monthly factsheets for ICICI Prudential mutual fund schemes can be downloaded directly from the official ICICI Prudential AMC website under the Downloads section. SEBI regulations mandate that these documents be publicly accessible without login.",
+      "source_url": "https://www.icicipruamc.com/downloads/sid-kim",
+      "last_updated": "July 2026"
+    },
+    {
+      "id": "chunk_22",
+      "scheme": "General / All Schemes",
+      "topic": "Taxation of Mutual Funds",
+      "keywords": ["tax", "taxation", "ltcg", "stcg", "capital gains tax", "income tax"],
+      "content": "As per current taxation laws for equity-oriented mutual funds, Long Term Capital Gains (LTCG) exceeding Rs. 1.25 lakh per financial year are taxed at 12.5% without indexation. Short Term Capital Gains (STCG) on units held for less than 12 months are taxed at a flat rate of 20%.",
+      "source_url": "https://www.amfiindia.com/investor-corner/knowledge-center/taxation.html",
+      "last_updated": "July 2026"
+    }
+  ]
+}

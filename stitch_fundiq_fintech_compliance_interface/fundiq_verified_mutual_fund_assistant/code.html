@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FundIQ | Verified Mutual Fund Facts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist:wght@400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-hover:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(30, 41, 59, 0.7);
+        }
+        .inner-glow-primary {
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        }
+        .emerald-glow {
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d3449;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "surface-variant": "#2d3449",
+                        "inverse-surface": "#dae2fd",
+                        "on-secondary-fixed-variant": "#005236",
+                        "surface": "#0b1326",
+                        "surface-container-high": "#222a3d",
+                        "secondary-fixed-dim": "#4edea3",
+                        "on-primary-container": "#0d0096",
+                        "on-secondary-container": "#00311f",
+                        "tertiary-fixed": "#ffdadb",
+                        "tertiary-container": "#ff516a",
+                        "on-primary": "#1000a9",
+                        "primary-fixed": "#e1e0ff",
+                        "tertiary": "#ffb2b7",
+                        "inverse-on-surface": "#283044",
+                        "error": "#ffb4ab",
+                        "surface-container-low": "#131b2e",
+                        "on-surface": "#dae2fd",
+                        "secondary-container": "#00a572",
+                        "on-tertiary-container": "#5b0017",
+                        "surface-tint": "#c0c1ff",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-secondary": "#003824",
+                        "surface-container-lowest": "#060e20",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#dae2fd",
+                        "error-container": "#93000a",
+                        "surface-bright": "#31394d",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "tertiary-fixed-dim": "#ffb2b7",
+                        "on-secondary-fixed": "#002113",
+                        "primary-container": "#8083ff",
+                        "surface-container-highest": "#2d3449",
+                        "outline": "#908fa0",
+                        "on-tertiary-fixed": "#40000d",
+                        "inverse-primary": "#494bd6",
+                        "surface-dim": "#0b1326",
+                        "on-tertiary": "#67001b",
+                        "on-primary-fixed": "#07006c",
+                        "secondary": "#4edea3",
+                        "background": "#0b1326",
+                        "on-tertiary-fixed-variant": "#92002a",
+                        "primary": "#c0c1ff",
+                        "surface-container": "#171f33",
+                        "outline-variant": "#464554"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "20px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "xl": "64px",
+                        "base": "4px",
+                        "lg": "40px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Geist"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "mono-data": ["Geist"],
+                        "headline-lg-mobile": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "mono-data": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-hidden selection:bg-primary/30">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full bg-surface/60 backdrop-blur-xl border-b border-white/10 h-16 flex justify-between items-center px-4 md:px-8 z-50">
+<div class="flex items-center gap-3">
+<img alt="FundIQ Logo" class="h-8 w-8 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ydrJuKZA3MRtzKiMm7xLXwACZOiRsNxyXE-whROtIHsTB3O5QgEkylZAFpETRTYE6BE27doOSQnvBqPw7WL6MH7i6Fm8HcIKXV0J-Klx9CmmEyR3FqipJ49Iedw7SDH6KGf7OQdpseJMfMs87t8vpEKGzbtnbPglDxV23dzlwyC3gxQnKBHjPbUfsktWVka8jlTYkbC1HXONSwQw9LuDoJvq3-8UTja6Y6q1cEQn4FLN_k9kODIAFqMgy6MShYKdxT_X21iy8yTr"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">FundIQ</span>
+<span class="text-[10px] text-on-surface-variant -mt-1 uppercase tracking-widest font-label-sm">Powered by Groww Knowledge Engine</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<div class="flex items-center gap-2 bg-secondary/10 border border-secondary/20 rounded-full px-3 py-1 emerald-glow">
+<span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-secondary font-label-sm uppercase text-[11px] tracking-wide">SEBI Compliant • Facts-Only RAG Engine</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-primary border border-primary/20 px-4 py-2 rounded-lg font-label-md transition-all active:scale-95 flex items-center gap-2 shadow-sm" onclick="toggleModal('explorer-modal')">
+<span class="material-symbols-outlined text-[18px]">list_alt</span>
+                View Selected Schemes (5)
+            </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">account_circle</span>
+</div>
+</header>
+<main class="h-screen pt-16 pb-24 flex flex-col items-center overflow-y-auto px-4">
+<!-- Hero Section -->
+<section class="max-w-2xl w-full text-center mt-12 mb-8 animate-in fade-in slide-in-from-top-4 duration-700">
+<h1 class="font-display-lg text-display-lg text-primary mb-4 leading-tight">Instant, Verified<br/>Mutual Fund Facts.</h1>
+<p class="text-on-surface-variant font-body-lg max-w-lg mx-auto">
+                Direct extraction from Scheme Information Documents (SID). 
+                Zero advisory bias. Zero hallucination.
+            </p>
+<div class="mt-8 grid grid-cols-2 gap-3 max-w-md mx-auto">
+<button class="glass glass-hover p-3 rounded-xl text-left transition-all group">
+<span class="material-symbols-outlined text-secondary mb-2">query_stats</span>
+<p class="text-on-surface text-label-md leading-snug group-hover:text-primary">What is the expense ratio of Large Cap fund?</p>
+</button>
+<button class="glass glass-hover p-3 rounded-xl text-left transition-all group">
+<span class="material-symbols-outlined text-secondary mb-2">savings</span>
+<p class="text-on-surface text-label-md leading-snug group-hover:text-primary">Minimum SIP for Top 100 fund?</p>
+</button>
+</div>
+</section>
+<!-- Chat Feed -->
+<section class="max-w-3xl w-full flex flex-col gap-6 pb-12">
+<!-- User Message -->
+<div class="flex justify-end animate-in slide-in-from-right-4 duration-300">
+<div class="bg-primary-container text-on-primary-container px-4 py-3 rounded-2xl rounded-tr-sm font-body-md max-w-[85%] shadow-lg inner-glow-primary">
+                    Show me the exit load for ICICI Prudential Bluechip Fund.
+                </div>
+</div>
+<!-- Assistant Response -->
+<div class="flex justify-start animate-in slide-in-from-left-4 duration-500 delay-150">
+<div class="glass p-5 rounded-2xl rounded-tl-sm max-w-[90%] shadow-xl">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-secondary/10 text-secondary px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verified Answer
+                        </span>
+<div class="h-1 w-1 bg-surface-variant rounded-full"></div>
+<span class="text-on-surface-variant text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">link</span> SID Source
+                        </span>
+</div>
+<p class="text-on-surface text-body-md leading-relaxed">
+                        The exit load for the ICICI Prudential Bluechip Fund is 1.00% if redeemed within 1 year from the date of allotment. No exit load applies for redemptions made after 1 year.
+                    </p>
+<div class="mt-4 pt-3 border-t border-white/5 flex justify-between items-center">
+<span class="text-[10px] font-mono-data text-on-surface-variant">Last updated: July 2026</span>
+<button class="text-primary text-[10px] font-bold uppercase hover:underline">Download SID PDF</button>
+</div>
+</div>
+</div>
+<!-- Retrieval State (Visible briefly in UI logic) -->
+<div class="flex justify-start items-center gap-3 text-on-surface-variant opacity-70 animate-pulse">
+<div class="material-symbols-outlined animate-spin text-secondary">progress_activity</div>
+<span class="text-label-sm font-mono-data uppercase tracking-wider">Retrieving verified facts...</span>
+</div>
+<!-- Advisory Refusal Card -->
+<div class="flex justify-start animate-in slide-in-from-left-4 duration-500 delay-300">
+<div class="bg-tertiary-container/10 border border-tertiary-container/30 p-5 rounded-2xl rounded-tl-sm max-w-[90%] shadow-lg">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container">warning</span>
+<div>
+<h4 class="text-tertiary-container font-headline-md text-[18px] mb-1">Advisory Query Detected</h4>
+<p class="text-on-surface-variant text-label-md leading-relaxed">
+                                I cannot provide "Buy/Sell" recommendations or suggest which fund is "best" for your portfolio. My purpose is to provide factual data points from official documents.
+                            </p>
+<a class="inline-flex items-center gap-2 mt-3 text-primary font-bold text-label-sm hover:gap-3 transition-all" href="#">
+                                View AMFI Educational Guides
+                                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Scheme Explorer Modal -->
+<div class="fixed inset-0 z-[100] hidden" id="explorer-modal">
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-sm" onclick="toggleModal('explorer-modal')"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl max-h-[85vh] overflow-hidden flex flex-col glass rounded-3xl shadow-2xl animate-in zoom-in-95 duration-200">
+<div class="px-6 py-4 border-b border-white/10 flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Verified ICICI Prudential Schemes</h3>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors" onclick="toggleModal('explorer-modal')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Scheme Card 1 -->
+<div class="bg-surface-container-low border border-white/5 p-4 rounded-2xl hover:border-primary/20 transition-all">
+<h4 class="text-on-surface font-bold text-label-md mb-2">Large Cap Fund</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-error/10 text-error text-[10px] font-bold uppercase">Very High Risk</span>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-primary font-label-sm flex items-center gap-1 hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span> SID Link
+                            </a>
+<span class="text-[10px] text-on-surface-variant">Update: July '26</span>
+</div>
+</div>
+<!-- Scheme Card 2 -->
+<div class="bg-surface-container-low border border-white/5 p-4 rounded-2xl hover:border-primary/20 transition-all">
+<h4 class="text-on-surface font-bold text-label-md mb-2">Dynamic Fund</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-secondary/10 text-secondary text-[10px] font-bold uppercase">Moderate Risk</span>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-primary font-label-sm flex items-center gap-1 hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span> SID Link
+                            </a>
+<span class="text-[10px] text-on-surface-variant">Update: July '26</span>
+</div>
+</div>
+<!-- Scheme Card 3 -->
+<div class="bg-surface-container-low border border-white/5 p-4 rounded-2xl hover:border-primary/20 transition-all">
+<h4 class="text-on-surface font-bold text-label-md mb-2">Short Term Fund</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-secondary/10 text-secondary text-[10px] font-bold uppercase">Low-Mod Risk</span>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-primary font-label-sm flex items-center gap-1 hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span> SID Link
+                            </a>
+<span class="text-[10px] text-on-surface-variant">Update: July '26</span>
+</div>
+</div>
+<!-- Scheme Card 4 -->
+<div class="bg-surface-container-low border border-white/5 p-4 rounded-2xl hover:border-primary/20 transition-all">
+<h4 class="text-on-surface font-bold text-label-md mb-2">Flexicap Fund</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-error/10 text-error text-[10px] font-bold uppercase">High Risk</span>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-primary font-label-sm flex items-center gap-1 hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span> SID Link
+                            </a>
+<span class="text-[10px] text-on-surface-variant">Update: July '26</span>
+</div>
+</div>
+<!-- Scheme Card 5 -->
+<div class="bg-surface-container-low border border-white/5 p-4 rounded-2xl hover:border-primary/20 transition-all">
+<h4 class="text-on-surface font-bold text-label-md mb-2">Top 100 Fund</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-error/10 text-error text-[10px] font-bold uppercase">High Risk</span>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-primary font-label-sm flex items-center gap-1 hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span> SID Link
+                            </a>
+<span class="text-[10px] text-on-surface-variant">Update: July '26</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-2xl">
+<div class="max-w-4xl mx-auto px-4 pt-4 pb-1">
+<div class="relative flex items-center gap-2">
+<button class="absolute left-3 text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined">attachment</span>
+</button>
+<input class="w-full h-14 bg-surface-container-high border border-white/10 rounded-2xl pl-12 pr-28 text-on-surface font-body-md focus:border-primary/50 focus:ring-0 transition-all placeholder:text-on-surface-variant/50" placeholder="Ask a factual question..." type="text"/>
+<div class="absolute right-2 flex items-center gap-1">
+<button class="p-2 text-on-surface-variant hover:text-error transition-colors" title="Clear Chat">
+<span class="material-symbols-outlined">delete_sweep</span>
+</button>
+<button class="bg-primary hover:bg-primary/90 text-on-primary h-10 w-10 rounded-xl flex items-center justify-center transition-all active:scale-95 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<footer class="w-full py-2 bg-surface-container-low/50 text-center">
+<p class="text-[10px] font-mono-data text-on-surface-variant uppercase tracking-widest flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">warning</span>
+                SEBI Compliance Notice: This tool provides objective data only. Mutual Fund investments are subject to market risks. Read all scheme related documents carefully.
+            </p>
+</footer>
+</div>
+<script>
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            } else {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        // Handle ESC key to close modal
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modals = document.querySelectorAll('[id$="-modal"]');
+                modals.forEach(m => m.classList.add('hidden'));
+            }
+        });
+    </script>
+</body></html>
