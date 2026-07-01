@@ -76,17 +76,19 @@ gantt
 ---
 
 ## Phase 2.5: Automated Daily Ingestion Scheduler (`Layer 5b`)
-**Goal:** Implement an automated background scheduling daemon that triggers the data ingestion engine daily to guarantee the knowledge base and columnar embeddings always contain the latest NAVs, expense ratios, and scheme documents without manual intervention.
+**Goal:** Implement an automated, serverless cron scheduler using GitHub Actions alongside native background timers to trigger daily data ingestion, guaranteeing the knowledge base and columnar embeddings always contain the latest NAVs, expense ratios, and scheme documents without manual intervention.
 
 ### Key Tasks:
-1. **Background Scheduler Engine ([src/backend/scheduler.py](file:///c:/Users/palla/OneDrive/Desktop/RAG%20based%20chatbot/src/backend/scheduler.py))**:
-   - Implement an asynchronous daily timer using native Python `asyncio` / background task scheduling that triggers every 24 hours (86,400 seconds) or at a targeted cron interval (e.g., daily midnight AMC document sync).
-   - Ensure non-blocking execution inside the FastAPI runtime lifecycle (`@app.on_event("startup")` / lifespan handler) without freezing API request threads.
-2. **Automated Corpus & Parquet Refresh Pipeline**:
-   - On scheduled trigger, automatically re-run `FreeLocalEmbedder` and `export_to_parquet.py` to regenerate `data/corpus_embeddings.parquet` with any updated AMC SIDs, factsheets, or NAV data.
-   - Invoke `get_retriever().load_corpus()` dynamically to hot-reload the in-memory vector index, achieving **zero-downtime daily knowledge updates**.
+1. **Serverless GitHub Actions Cron Scheduler ([.github/workflows/daily_ingestion_scheduler.yml](file:///c:/Users/palla/OneDrive/Desktop/RAG%20based%20chatbot/.github/workflows/daily_ingestion_scheduler.yml))**:
+   - Implement an automated CI/CD cron workflow triggering daily at `0 20 * * *` (01:30 AM IST) or via on-demand manual execution (`workflow_dispatch`).
+   - Dynamically checkout the codebase, setup Python 3.11, install dependencies, and execute `export_to_parquet.py` to re-vectorize AMC corpora with `FreeLocalEmbedder`.
+   - Automatically detect modifications to `data/corpus.json` or `data/corpus_embeddings.parquet`, committing and pushing refreshed datasets directly to `main` with `[skip ci]` tags.
+   - **Zero-Downtime Railway Cloud Sync**: When GitHub Actions pushes refreshed Parquet embeddings to `main`, Railway automatically detects the commit and redeploys the live web service with updated factual knowledge.
+2. **Native Asynchronous Background Daemon ([src/backend/scheduler.py](file:///c:/Users/palla/OneDrive/Desktop/RAG%20based%20chatbot/src/backend/scheduler.py))**:
+   - Implement an in-memory fallback daemon using Python `asyncio` mounted inside the FastAPI startup lifecycle (`@app.on_event("startup")`).
+   - Executes hot-reloading of the in-memory vector index (`get_retriever().load_corpus()`) without dropping active API request threads.
 3. **Execution Logging & Error Recovery**:
-   - Log automated ingestion cycles (`[SCHEDULER] Daily ingestion cycle triggered...`, `[SCHEDULER] Parquet dataset & RAG memory cache successfully updated.`).
+   - Maintain standardized logging timestamps across both CI/CD runner execution and container logs (`[SCHEDULER] [TIME] Triggering Daily Ingestion Cycle...`, `[SCHEDULER] [OK] Parquet dataset refreshed successfully`).
    - Implement automatic retry logic and fallback to the previous valid Parquet file if an upstream document parsing error occurs during daily sync.
 
 ---
